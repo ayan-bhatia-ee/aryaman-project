@@ -56,7 +56,34 @@ void forward() {
   analogWrite(ENC, motorSpeed);
   analogWrite(END, motorSpeed);
 }
-
+void left() {
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+  analogWrite(ENA, motorSpeed);
+  analogWrite(ENB, motorSpeed);
+  digitalWrite(IN5, HIGH);
+  digitalWrite(IN6, LOW);
+  digitalWrite(IN7, LOW);
+  digitalWrite(IN8, HIGH);
+  analogWrite(ENC, motorSpeed);
+  analogWrite(END, motorSpeed);
+}
+void right() {
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  analogWrite(ENA, motorSpeed);
+  analogWrite(ENB, motorSpeed);
+  digitalWrite(IN5, LOW);
+  digitalWrite(IN6, HIGH);
+  digitalWrite(IN7, HIGH);
+  digitalWrite(IN8, LOW);
+  analogWrite(ENC, motorSpeed);
+  analogWrite(END, motorSpeed);
+}
 
 
 
